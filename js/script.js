@@ -4,8 +4,10 @@ $(document).ready(function () {
 
 
     function fadeOutOptions() {
-        $(".bedroom").fadeTo(100);
-        $(".service").unbind("click",fadeOutOptions);
+        $(".bedroom").slideToggle();
+        $(".bathroom").slideToggle();
+        $(".kitchen").slideToggle();
+        $(".service").unbind("click", fadeOutOptions);
 
 
     }
@@ -13,11 +15,10 @@ $(document).ready(function () {
     $(".service").click(fadeInOptions);
 
     function fadeInOptions() {
-        $(".baicClean").fadeIn();
-        $(".deepClean").fadeIn();
-        $(".movingInOut").fadeIn();
-
+        $(".basicClean").delay(1000).slideToggle();
+        $(".deepClean").delay(1000).slideToggle();
+        $(".movingInOut").delay(1000).slideToggle();
+        $(".service").unbind("click", fadeInOptions);
     }
-
 
 });
