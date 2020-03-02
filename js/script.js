@@ -1,22 +1,23 @@
 $(document).ready(function () {
 
-    $(".service").click(serviceOptions);
+    $(".service").click(fadeOutOptions);
 
 
-    function serviceOptions() {
-        $(".listContainer").slideToggle();
-        $(".service").unbind(hoverEffect);
-
-
-
-    }
-
-    $(".service").click(hoverEffectTwo);
-
-    function hoverEffectTwo() {
-        $(".service").css("color", "black");
+    function fadeOutOptions() {
+        $(".bedroom").fadeTo(100);
+        $(".service").unbind("click",fadeOutOptions);
 
 
     }
+
+    $(".service").click(fadeInOptions);
+
+    function fadeInOptions() {
+        $(".baicClean").fadeIn();
+        $(".deepClean").fadeIn();
+        $(".movingInOut").fadeIn();
+
+    }
+
 
 });

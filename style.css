@@ -33,7 +33,7 @@ body {
     }
 
     .listContainer {
-        position: relative;
+        position: absolute;
         height: 500px;
         width: 70%;
         flex-flow: column;
@@ -174,12 +174,22 @@ body {
     .service,
     .bedroom,
     .bathroom,
-    .kitchen {
+    .kitchen,
+    .basicClean,
+    .deepClean,
+    .movingInOut {
         position: relative;
         font-size: 50px;
         font-weight: 100;
         cursor: pointer;
 
     }
+
+    .basicClean,
+    .deepClean,
+    .movingInOut {
+        display: none;
+    }
+
 
 }
