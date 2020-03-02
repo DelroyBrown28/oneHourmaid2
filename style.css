@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100,300,400,600&display=swap');
+html,
+body {
+    font-family: 'Josefin Sans';
+    background-color: #F1F1E6;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+    html,
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+
+    }
+
+    .listContainer,
+    .service,
+    .bedroom,
+    .bathroom,
+    .kitchen {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .listContainer {
+        position: relative;
+        height: 500px;
+        width: 70%;
+        flex-flow: column;
+        justify-content: space-around;
+    }
+
+    .service,
+    .bedroom,
+    .bathroom,
+    .kitchen {
+        position: relative;
+        height: 70px;
+        width: 100%;
+        font-size: 25px;
+        font-weight: 300;
+    }
+
+}
