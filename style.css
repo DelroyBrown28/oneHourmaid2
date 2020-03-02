@@ -21,35 +21,35 @@ body {
 
     }
 
-    .listContainer,
-    .service,
-    .bedroom,
-    .bathroom,
-    .kitchen {
+    .listContainer {
+        position: relative;
+        height: 450px;
+        width: 80%;
+        border: 1px solid black;
+        display: flex;
+        flex-flow: column;
+    }
+
+    .servicesWrap,
+    .services,
+    .bedroomsWrap,
+    .bedrooms,
+    .bathroomsWrap,
+    .bedrooms,
+    .kitchensWrap,
+    .kitchens {
+        position: relative;
+        width: 100%;
+        height: 112.5px;
+        border: 1px solid black;
         display: flex;
         align-items: center;
         justify-content: center;
-
-    }
-
-    .listContainer {
-        position: absolute;
-        height: 500px;
-        width: 70%;
-        flex-flow: column;
-        justify-content: space-around;
-    }
-
-    .service,
-    .bedroom,
-    .bathroom,
-    .kitchen {
-        position: relative;
-        height: 70px;
-        width: 100%;
         font-size: 25px;
         font-weight: 300;
+
     }
+
 
 }
 
@@ -64,32 +64,30 @@ body {
 
     }
 
-    .listContainer,
-    .service,
-    .bedroom,
-    .bathroom,
-    .kitchen {
+    .listContainer {
+        position: relative;
+        height: 750px;
+        width: 80%;
+        border: 1px solid black;
+        display: flex;
+        flex-flow: column;
+    }
+
+    .servicesWrap,
+    .services,
+    .bedroomsWrap,
+    .bedrooms,
+    .bathroomsWrap,
+    .bedrooms,
+    .kitchensWrap,
+    .kitchens {
+        position: relative;
+        width: 100%;
+        height: 187.5px;
+        border: 1px solid black;
         display: flex;
         align-items: center;
         justify-content: center;
-
-    }
-
-    .listContainer {
-        position: relative;
-        height: 700px;
-        width: 70%;
-        flex-flow: column;
-        justify-content: space-around;
-    }
-
-    .service,
-    .bedroom,
-    .bathroom,
-    .kitchen {
-        position: relative;
-        height: 115px;
-        width: 100%;
         font-size: 35px;
         font-weight: 300;
 
@@ -99,7 +97,6 @@ body {
 
 /* iPad pro (portrait) ----------- */
 @media only screen and (min-device-width: 1024px) and (max-device-height: 1366px) and (orientation: portrait) {
-
     html,
     body {
         display: flex;
@@ -108,32 +105,30 @@ body {
 
     }
 
-    .listContainer,
-    .service,
-    .bedroom,
-    .bathroom,
-    .kitchen {
+    .listContainer {
+        position: relative;
+        height: 1000px;
+        width: 80%;
+        border: 1px solid black;
+        display: flex;
+        flex-flow: column;
+    }
+
+    .servicesWrap,
+    .services,
+    .bedroomsWrap,
+    .bedrooms,
+    .bathroomsWrap,
+    .bedrooms,
+    .kitchensWrap,
+    .kitchens {
+        position: relative;
+        width: 100%;
+        height: 250px;
+        border: 1px solid black;
         display: flex;
         align-items: center;
         justify-content: center;
-
-    }
-
-    .listContainer {
-        position: relative;
-        height: 875px;
-        width: 70%;
-        flex-flow: column;
-        justify-content: space-around;
-    }
-
-    .service,
-    .bedroom,
-    .bathroom,
-    .kitchen {
-        position: relative;
-        height: 145px;
-        width: 100%;
         font-size: 50px;
         font-weight: 300;
 
@@ -143,7 +138,6 @@ body {
 
 /* Desktops and laptops ----------- */
 @media only screen and (min-width : 1224px) {
-
     html,
     body {
         display: flex;
@@ -152,51 +146,33 @@ body {
 
     }
 
-    .blind {
-        opacity: 0;
+    .listContainer {
+        position: relative;
+        height: 750px;
+        width: 80%;
+        border: 1px solid black;
+        display: flex;
+        flex-flow: row;
     }
 
-    .listContainer,
-    .service,
-    .bedroom,
-    .bathroom,
-    .kitchen {
+    .servicesWrap,
+    .services,
+    .bedroomsWrap,
+    .bedrooms,
+    .bathroomsWrap,
+    .bedrooms,
+    .kitchensWrap,
+    .kitchens {
+        position: relative;
+        width: 100%;
+        height: 750px;
+        border: 1px solid black;
         display: flex;
         align-items: center;
         justify-content: center;
-
-    }
-
-    .listContainer {
-        position: relative;
-        width: 100%;
-        height: 100px;
-        flex-flow: row;
-        justify-content: space-evenly;
-    }
-
-    .service,
-    .bedroom,
-    .bathroom,
-    .kitchen,
-    .basicClean,
-    .deepClean,
-    .movingInOut {
-        position: relative;
-        font-size: 50px;
+        font-size: 35px;
         font-weight: 300;
-        cursor: pointer;
 
     }
-
-    .basicClean,
-    .deepClean,
-    .movingInOut {
-        position: relative;
-        display: none;
-        font-weight: 100;
-
-    }
-
 
 }

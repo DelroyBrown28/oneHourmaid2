@@ -1,6 +1,6 @@
 $(document).ready(function () {
 
-    $(".service").click(fadeOutOptions);
+    $(".service").click(--OFF--fadeOutOptions);
 
 
     function fadeOutOptions() {
