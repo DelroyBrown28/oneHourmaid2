@@ -140,3 +140,47 @@ body {
     }
 
 }
+
+/* Desktops and laptops ----------- */
+@media only screen and (min-width : 1224px) {
+
+    html,
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .listContainer,
+    .service,
+    .bedroom,
+    .bathroom,
+    .kitchen {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+    .listContainer {
+        position: relative;
+        width: 100%;
+        height: 100px;
+        flex-flow: row;
+        justify-content: space-evenly;
+    }
+
+    .service,
+    .bedroom,
+    .bathroom,
+    .kitchen {
+        position: relative;
+        font-size: 50px;
+        font-weight: 100;
+        cursor: pointer;
+
+    }
+
+
+}
