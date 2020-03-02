@@ -1,23 +1,33 @@
 $(document).ready(function () {
 
-    $(".servicesWrap").click(fadeOutOptions);
 
-    function fadeOutOptions() {
-        $(".bedrooms").fadeToggle("fast");
-        $(".bathrooms").fadeToggle("fast");
-        $(".kitchens").fadeToggle("fast");
-        $(".servicesListContainer").fadeToggle();
-        $(".bedrooms").unbind(fadeOutOptions)
-        $(".servicesWrap").unbind(fadeOutOptions);
+    $(".basicClean").click(servicesOptions);
+
+    function servicesOptions() {
+        $(".basicClean").slideToggle();
+        $(".deepClean").slideToggle();
+        $(".moveInOut").slideToggle();
+        $(".optionsWrap").slideToggle();
+        $(".basicClean").unbind(servicesOptions);
+
 
 
     }
 
-    $(".bedrooms").click(numberOfBedrooms);
 
-    function numberOfBedrooms() {
-        
+    $(".services").click(servicesOptionsRevert);
+
+    function servicesOptionsRevert() {
+        $(".basicClean").slideToggle();
+        $(".bedrooms").slideToggle();
+        $(".deepClean").slideToggle();
+        $(".moveInOut").slideToggle();
+        $(".bathrooms").slideToggle();
+        $(".kitchens").slideToggle();
+
+
     }
+
 
 
 });
